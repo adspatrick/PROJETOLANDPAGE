@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palácio Das Makes</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #FF2E93;
+            --secondary: #CFA6FF;
+            --accent: #FF4FA3;
+            --dark: #1A1A1A;
+            --light: #FFF7FB;
+            --white: #FFFFFF;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            background-color: var(--light);
+            font-family: 'Inter', sans-serif;
+            color: var(--dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* --- NAVEGAÇÃO --- */
+        nav {
+            background: var(--white);
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        /* --- HERO SECTION --- */
+        header {
+            background: linear-gradient(rgba(255, 79, 163, 0.8), rgba(255, 79, 163, 0.8)), 
+                        url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80') center/cover;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            clip-path: ellipse(100% 100% at 50% 0%); /* Efeito curvo moderno */
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin: 0;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 2000px;
+            margin: 20px auto;
+            font-weight: 200;
+        }
+
+        /* --- GRID DE CONTEÚDO --- */
+        .container {
+            max-width: 1100px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            margin-bottom: 100px;
+            flex-wrap: wrap;
+        }
+
+        /* Inverte a ordem em linhas pares para criar o layout em Z */
+        .row:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .col-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .col-img {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .col-img img {
+            width: 100%;
+            border-radius: 30px;
+            box-shadow: 20px 20px 0px var(--secondary); /* Detalhe de design moderno */
+            transition: 0.4s;
+        }
+
+        .col-img img:hover {
+            transform: scale(1.02);
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        /* --- BOTÕES --- */
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 16px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255, 46, 147, 0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            background: var(--dark);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* --- SEÇÃO CONTATO (FULL WIDTH) --- */
+        .contact-section {
+            background: var(--secondary);
+            padding: 80px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 40px auto 0;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            display: grid;
+            gap: 15px;
+        }
+
+        .form-container input, .form-container textarea {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-family: inherit;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .row { text-align: center; gap: 30px; }
+            .col-img img { box-shadow: 10px 10px 0px var(--secondary); }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Sua Arte, Suas Regras!</div>
+        <a href="https://www.instagram.com/palacio_das_makes_/" class="btn" style="padding: 10px 20px; font-size: 0.9rem;">Instagram</a>
+    </nav>
+
+    <header>
+        <h1>Palácio Das Makes!</h1>
+        <p>Aprenda sobre makes e cosméticos incríveis e use os produtos certos pra destacar sua beleza sem complicação.</p>
+        <a href="https://api.whatsapp.com/send/?phone=5591980446979&text&type=phone_number&app_absent=0&utm_source=ig" class="btn">Começar Jornada</a>
+    </header>
+
+    <main class="container" id="conteudo">
+
+        <div class="row">
+            <div class="col-text">
+                <h2>Nossa Essência</h2>
+                <p>No Palácio Das Makes, a maquiagem não é uma máscara, é uma expressão. Criamos este espaço para quem deseja saber das novidades.</p>
+                <a href="https://www.instagram.com/p/DSkqMF7EQRl/" class="btn">Saiba Mais</a>
+            </div>
+            <div class="col-img">
+                <img src="make.jpg" alt="Maquiagem Profissional">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-text">
+                <h2>Aprenda com Experts</h2>
+                <p>Tenha acesso a tutoriais exclusivos de técnicas que são tendência nas passarelas e redes sociais. Do acabamento "glow" ao matte perfeito, ensinamos o caminho das pedras.</p>
+                <a href="https://www.youtube.com/watch?v=-YB7D0bUeME" class="btn">Ver Tutoriais</a>
+            </div>
+            <div class="col-img">
+                <img src="PALACIO.jpg" alt="Dicas de maquiagem">
+            </div>
+        </div>
+
+    </main>
+
+    <section class="contact-section" id="contato">
+        <h2>Faça parte da nossa comunidade</h2>
+        <p>Receba dicas semanais e novidades exclusivas do mundo da beleza.</p>
+        
+        <form class="form-container" action="https://formspree.io/f/xaqaeyrp" method="POST">
+            <input type="text" name="nome" placeholder="Seu Nome Completo" required>
+            <input type="email" name="email" placeholder="Seu E-mail Principal" required>
+            <textarea name="mensagem" rows="4" placeholder="Como podemos te ajudar?"></textarea>
+            <button type="submit" class="btn">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <footer>
+        <p><strong>Palácio Das Makes</strong></p>
+        <p>Transformando pincéis em varinhas mágicas desde 2025.</p>
+        <div style="margin-top: 20px; opacity: 0.6; font-size: 0.8rem;">
+            © 2026 Todos os direitos reservados.
+        </div>
+    </footer>
+
+</body>
+</html>

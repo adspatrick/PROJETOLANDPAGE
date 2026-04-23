@@ -1,0 +1,71 @@
+Trabalho - Criação de Landing Page
+1. Resumo do Projeto
+O que é:
+Um pequeno texto explicando a ideia da sua landing page.
+O que escrever:
+- Qual o nome do projeto: Palácio Das Makes
+- Para que serve a página: Ensinar tudo relacionado a maquiagem
+- Quem é o público: Majoritariamente feminino
+- Qual o objetivo: divulgar, informar
+2. Metodologia
+O que é:
+Explicação de como você desenvolveu o trabalho.
+O que escrever:
+- Quais ferramentas utilizou: VS Code, Chrome, ChatGpt, formspree
+- Como começou: Buscando um nicho conhecido.
+- Etapas que você seguiu:
+Primeiro planejei a ideia, depois criei a estrutura em HTML e finalizei com ajustes visuais.
+3. Estrutura da Página:
+- Se usou header, main, footer
+- Quantas seções existem
+- Como organizou com divs: blocos em seção com divs internas
+A página possui um cabeçalho com título, uma seção principal com informações e um rodapé.
+4. Paleta de Cores
+O que é:
+As cores escolhidas para o site.
+- Cor principal: Rosa
+- Cor secundária: lilás
+- Cor de fundo: branco
+- Cor do texto Branco
+-primary: #FF2E93;
+--secondary: #CFA6FF;
+--accent: #FF4FA3;
+--dark: #1A1A1A;
+--light: #FFF7FB;
+--white: #FFFFFF;
+5. Tipografia
+O que é:
+As fontes utilizadas no site.
+O que escrever:
+- Fonte do título:Montserrat
+- Fonte do texto: Inter
+- Tamanho aproximado:
+1.2rem ≈ 19px
+Exemplo:
+Usei Arial para textos e tamanho maior para os títulos.
+6. Imagens e Recursos
+O que é:
+As imagens usadas na página.
+O que escrever:
+- De onde veio a imagem: Pinterest, instagram.
+- Para que ela serve na página: ilustrar
+7. Funcionalidades
+O que é:
+O que o usuário pode fazer na página.
+O que escrever:
+- Botões: botoes que levam a um link de contato, whatsapp,tutorias de maquiagem no youtube
+- Links: link de redes sociais: instagram
+- Formulários para melhor interação
+8. Considerações Finais
+O que é:
+Reflexão sobre o trabalho.
+O que escrever:
+- O que foi difícil: organizar os códigos pra que a interface da página fosse o mais perto
+possível do que queria.
+- O que você aprendeu: a estruturar melhor os códigos
+- O que melhoraria: o cabeçalho diminuiria pra ficar menor adicionaria mais funcionalidades
+talvez.
+9. Anexos
+O que é:
+Materiais para comprovar o trabalho.
+Link no github
